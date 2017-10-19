@@ -14,6 +14,10 @@
 		772533681F936209003E814C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772533661F936209003E814C /* LaunchScreen.storyboard */; };
 		772533731F936209003E814C /* LifeCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772533721F936209003E814C /* LifeCodeTests.swift */; };
 		7725337E1F936209003E814C /* LifeCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7725337D1F936209003E814C /* LifeCodeUITests.swift */; };
+		77345ED51F97616200F10EF1 /* detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77345ED41F97616200F10EF1 /* detail.swift */; };
+		77345ED71F98580200F10EF1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77345ED61F98580200F10EF1 /* DetailViewController.swift */; };
+		777392261F94B25000503526 /* NumerologyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777392251F94B25000503526 /* NumerologyViewController.swift */; };
+		77F8B3541F947D510048559E /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F8B3531F947D510048559E /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		772533791F936209003E814C /* LifeCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7725337D1F936209003E814C /* LifeCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCodeUITests.swift; sourceTree = "<group>"; };
 		7725337F1F936209003E814C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77345ED41F97616200F10EF1 /* detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detail.swift; sourceTree = "<group>"; };
+		77345ED61F98580200F10EF1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		777392251F94B25000503526 /* NumerologyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumerologyViewController.swift; sourceTree = "<group>"; };
+		77F8B3531F947D510048559E /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,10 @@
 				7725335D1F936209003E814C /* AppDelegate.swift */,
 				7725335F1F936209003E814C /* ViewController.swift */,
 				772533611F936209003E814C /* Main.storyboard */,
+				77345ED61F98580200F10EF1 /* DetailViewController.swift */,
+				77345ED41F97616200F10EF1 /* detail.swift */,
+				777392251F94B25000503526 /* NumerologyViewController.swift */,
+				77F8B3531F947D510048559E /* DatePickerViewController.swift */,
 				772533641F936209003E814C /* Assets.xcassets */,
 				772533661F936209003E814C /* LaunchScreen.storyboard */,
 				772533691F936209003E814C /* Info.plist */,
@@ -260,7 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				772533601F936209003E814C /* ViewController.swift in Sources */,
+				777392261F94B25000503526 /* NumerologyViewController.swift in Sources */,
+				77345ED51F97616200F10EF1 /* detail.swift in Sources */,
+				77345ED71F98580200F10EF1 /* DetailViewController.swift in Sources */,
 				7725335E1F936209003E814C /* AppDelegate.swift in Sources */,
+				77F8B3541F947D510048559E /* DatePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
