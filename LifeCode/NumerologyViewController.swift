@@ -18,6 +18,7 @@ class NumerologyViewController: UIViewController {
     var lifeCode1 = 0
     var lifeCode2 = 0
     var lifeCode3 = 0
+    var date = ""
     
     var buttonTag: Int = 0
     
@@ -35,6 +36,40 @@ class NumerologyViewController: UIViewController {
                        numberDetail.init(number: "8", intro: "你是天生的領導者，擁有累積龐大財富的能力。你的管理才能不在於簿記或瑣碎的管理，而在於宏大的願景、目的，以及長遠的目標。你有能力鼓舞他人加入你的追尋之旅，然而，別人通常看不到你所看見的東西。因此，你身邊的人需要你不斷地引導、鼓勵。你的數字踏在危險的權利道路上，墮落與腐敗也等在那裡。你必須學習從失敗與挫折中站起來，要小心不能變得過於固執、傲慢、缺乏耐心。"),
                        numberDetail.init(number: "9", intro: "你是慈善家與人道主義者，關懷社會，重視世界情勢。擁有深厚的同情心，是個理想主義者。你會奉獻自己的金錢、時間與精力讓世界變得更美好。你的關鍵性格是你感到必須犧牲奉獻。你必須學會放棄物質財產與人際關係。你的人生課題不論是何事，只要握太緊就會帶來痛苦。你有能力遠距離、客觀的檢視自己的人生，你要對自己誠實負責。你願意敞開心胸面對自己的缺點與長處時，將會身心平衡，也能更愛自己、愛整個人生，對自己與生活有近一步的了解。")]
     
+    
+    
+    func judgeNumberColor () {
+        
+        if date.contains("1") {
+            numberButtons[0].alpha = 1
+        }
+        if date.contains("2") {
+            numberButtons[1].alpha = 1
+        }
+        if date.contains("3") {
+            numberButtons[2].alpha = 1
+        }
+        if date.contains("4") {
+            numberButtons[3].alpha = 1
+        }
+        if date.contains("5") {
+            numberButtons[4].alpha = 1
+        }
+        if date.contains("6") {
+            numberButtons[5].alpha = 1
+        }
+        if date.contains("7") {
+            numberButtons[6].alpha = 1
+        }
+        if date.contains("8") {
+            numberButtons[7].alpha = 1
+        }
+        if date.contains("9") {
+            numberButtons[8].alpha = 1
+        }
+ 
+        
+    }
 
     
     
@@ -42,15 +77,20 @@ class NumerologyViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        judgeNumberColor()
         
         if lifeCode1 < 10 {
             lifeCodeLabel.text = "\(lifeCode1)"
+            numberButtons[lifeCode1 - 1].alpha = 1
         } else if lifeCode2 < 10 {
             lifeCodeLabel.text = "\(lifeCode2)"
+            numberButtons[lifeCode2 - 1].alpha = 1
         } else if lifeCode3 < 10 {
             lifeCodeLabel.text = "\(lifeCode3)"
+            numberButtons[lifeCode3 - 1].alpha = 1
         }
-         
+        
+        print(date)
     }
 
     override func didReceiveMemoryWarning() {

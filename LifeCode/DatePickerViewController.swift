@@ -16,11 +16,13 @@ class DatePickerViewController: UIViewController {
     var lifeCode1 = 0
     var lifeCode2 = 0
     var lifeCode3 = 0
+    var date = ""
     
     @IBAction func datePicker(_ sender: Any) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyyMMdd"
         let dateString = dateFormatter.string(from: birthDatePicker.date)
+        date = dateString
         
         var sum1 = 0
         var sum2 = 0
@@ -57,6 +59,7 @@ class DatePickerViewController: UIViewController {
         lifeCode1 = sum1
         lifeCode2 = sum2
         lifeCode3 = sum3
+        
     }
     
 
@@ -93,6 +96,7 @@ class DatePickerViewController: UIViewController {
         controller.lifeCode1 = lifeCode1
         controller.lifeCode2 = lifeCode2
         controller.lifeCode3 = lifeCode3
+        controller.date = date
         
         
     }
